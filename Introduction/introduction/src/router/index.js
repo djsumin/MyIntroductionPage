@@ -1,9 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/Home.vue'
-import AboutView from '../views/About.vue'
 import ProjectView from '../views/Project.vue'
 import ContactView from '../views/Contact.vue'
-import GithubView from '../views/Github.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,11 +11,7 @@ const router = createRouter({
       name: 'home',
       component: HomeView
     },
-    {
-      path: '/about',
-      name: 'about',
-      component: AboutView
-    },
+    
     {
       path: '/project',
       name: 'project',
@@ -28,11 +22,7 @@ const router = createRouter({
       name: 'contact',
       component: ContactView
     },
-    {
-      path: '/github',
-      name: 'github',
-      component: GithubView
-    },
+    
     
   ]
 })

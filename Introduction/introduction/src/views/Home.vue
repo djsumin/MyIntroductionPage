@@ -1,28 +1,21 @@
 <template>
     <div>
-        <h2>home</h2>
-        <div class="imgbox">
-            <img src="@/assets/myphoto1.jpg" style="height: 200px;"/>
+        <div class="container">
+            <div class="imgbox">
+                <img src="@/assets/myphoto1.jpg" style="height: 500px;"/>
+            </div>
+            <div class="english-intro">
+                <h2>hello! I am Sumin Lee </h2>
+                <h3>Studying for being developer :-) </h3>
+            </div>
         </div>
-        <p class="txt-title"></p>
+        <div class="container2">
+
+        </div>
     </div>
 </template>
 
 <script setup>
-
-const $txt = document.querySelector(".txt-title");
-const content= "Hello! Pre-developer, Lee Sumin :)";
-let contentIndex = 0;
-
-let typing = function(){
-    $txt.innerHTML += content[contentIndex];
-    contentIndex++;
-    if (contentIndex > content.length){
-        $txt.textContent = "";
-        contentIndex=0;
-    }
-}
-setInterval(typing, 200);
 
 
 
@@ -30,10 +23,22 @@ setInterval(typing, 200);
 </script>
 
 <style scoped>
-.imgbox{
-    width: 150px;
-    height: 150px;
-    border-radius: 70%;
-    overflow: hidden;
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+.imgbox img{
+    max-width: 100%;
+    height: auto;
+}
+.english-intro{
+    margin-left: 30px;
+}
+
+
+
+
 </style>

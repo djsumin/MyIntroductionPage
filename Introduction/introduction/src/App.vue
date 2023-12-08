@@ -15,4 +15,6 @@ import TheHeaderNav from './views/common/TheHeaderNav.vue';
 * {
   background-color: #F3EEEA;
 }
+
+
 </style>
