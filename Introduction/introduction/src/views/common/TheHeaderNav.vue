@@ -1,7 +1,7 @@
 <template>
     <div>
         <header>
-            <h1>LEE SU MIN</h1>
+            <h1>✨LEE SU MIN✨</h1>
             <nav>
                     <RouterLink :to="{name: 'home'}"><h2>About</h2></RouterLink>
                     <RouterLink :to="{name: 'project'}"><h2>Project</h2></RouterLink>
